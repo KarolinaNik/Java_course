@@ -9,6 +9,8 @@ public class DollarGame {
     And then, how many quarters? */
 
     public static void main(String args[]) {
+
+        System.out.println("Welcome to Pound game. Let's count your coins.");
         System.out.println("How many pennies you have?");
         Scanner scanner = new Scanner(System.in);
         int pennies = scanner.nextInt();
@@ -21,6 +23,8 @@ public class DollarGame {
 
         System.out.println("How many 50s you have?");
         int fifties = scanner.nextInt();
+
+        scanner.close();
 
         int dollar = pennies + tens * 10 + twenties * 20 + fifties * 50;
         if (dollar == 100) {
