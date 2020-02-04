@@ -24,7 +24,7 @@ public class Cashier {
             double price = scanner.nextDouble();
             total = total + price;
         }
-
+        scanner.close();
         System.out.println("The total is: " + total);
 
     }
